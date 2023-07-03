@@ -3,3 +3,37 @@
     --secondary:#7678ED;
     --accento:#F18701;
 }
+
+/* NAVBAR */
+nav{
+    height: 5rem;
+    background-color: var(--secondary);
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li{
+    padding: 0 0.5rem;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:hover{
+    color: var(--primary);
+}
+
+.containerLogo{
+    width: 3rem;
+    height: 3rem;
+}
+
+.iconBox i:hover,
+.nav li a:hover{
+    color: var(--primary);
+}

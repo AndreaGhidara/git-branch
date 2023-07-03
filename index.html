@@ -17,26 +17,58 @@
 <body>
     <!-- HEADER -->
     <header>
-        <nav class="bg-primary">
-            <div class="container bg-warning">
-                <div class="row">
-                    <div class="col">
-                        logo
+        <nav>
+            <div class="container h-100">
+                <div class="row p-2">
+                    <!-- Logo -->
+                    <div class="col d-flex align-items-center justify-content-start">
+                        <div class="containerLogo">
+                            <img class="img-fluid rounded-2" src="./assets/img/navbar-logo.avif" alt="">
+                        </div>
                     </div>
-                    <div class="col">
-                        link
+                    <!-- Link -->
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <ul class="d-flex m-0 fs-5 fw-bold">
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">More</a>
+                            </li>
+                            <li>
+                                <a href="">About</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col">
-                        menu
+                    <div class="col d-flex align-items-center justify-content-end">
+                        <div class="iconBox btn">
+                            <i class="fa-solid fa-inbox"></i>
+                        </div>
+                        <div class="iconBox btn">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="iconBox">
+                            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                                <i class="fa-solid fa-box"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Off Canvas -->
+                    <div class="offcanvas offcanvas-end " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                            <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body bg-black text-white">
+                            <h3>-Your order:</h3>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
         <!-- JUMBOTRON -->
         <div class="jumbotron">
-            <div class="container-fluid bg-success">
-                Jumbotron
-            </div>
+            
         </div>
     </header>
     <!-- MAIN -->
