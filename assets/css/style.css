@@ -3,3 +3,24 @@
     --secondary:#7678ED;
     --accento:#F18701;
 }
+
+.bg_primary{
+    background-color: var(--primary);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--accento);
+    color: white;
+}
+
+.accordion-button:is(.collapsed) {
+    opacity: .6;
+}
+
+.accordion-button:focus{
+    box-shadow: var(--primary) !important;
+}
+
+.accordion-button:focus:is(.collapsed){
+    color: black;
+}
