@@ -3,3 +3,23 @@
     --secondary:#7678ED;
     --accento:#F18701;
 }
+
+main{
+    background-color: var(--primary);
+}
+
+.cardContainer{
+    background-color: var(--primary);
+}
+.gameCard{
+    width: calc(100% / 4);
+    height: 450px;
+    border-radius: 20px;
+}
+
+.gameCard img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 20px;
+}

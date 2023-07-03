@@ -1,60 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DeepStoreGame</title>
     <!-- BOOSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- FONTAWESOME -->
-    <script src='https://kit.fontawesome.com/904cc76917.js' crossorigin= 'anonymous'></script>
+    <script src='https://kit.fontawesome.com/904cc76917.js' crossorigin='anonymous'></script>
     <!-- VUE -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- STYLE -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+<div id="app">
 
-<body>
-    <!-- HEADER -->
-    <header>
-        <nav class="bg-primary">
-            <div class="container bg-warning">
-                <div class="row">
-                    <div class="col">
-                        logo
-                    </div>
-                    <div class="col">
-                        link
-                    </div>
-                    <div class="col">
-                        menu
+    <body>
+        <!-- HEADER -->
+        <header>
+            <nav class="bg-primary">
+                <div class="container bg-warning">
+                    <div class="row">
+                        <div class="col">
+                            logo
+                        </div>
+                        <div class="col">
+                            link
+                        </div>
+                        <div class="col">
+                            menu
+                        </div>
                     </div>
                 </div>
+            </nav>
+            <!-- JUMBOTRON -->
+            <div class="jumbotron">
+                <div class="container-fluid bg-success">
+                    Jumbotron
+                </div>
             </div>
-        </nav>
-        <!-- JUMBOTRON -->
-        <div class="jumbotron">
-            <div class="container-fluid bg-success">
-                Jumbotron
+        </header>
+        <!-- MAIN -->
+        <main class="text-white">
+            <div class="container w-100 cardContainer d-flex flex-wrap">
+                <template v-for="card in main_card_img" :key="card.title">
+                    <div class="gameCard mb-3 p-2">
+                        <img class="mb-2" :src="card.url" :alt="card.title" width="200" height="200" />
+                        <h4>{{ card.title }}</h4>
+                        <p>{{ card.price }} €</p>
+                    </div>
+                </template>
             </div>
-        </div>
-    </header>
-    <!-- MAIN -->
-    <main class="bg-black text-white">
-        MAIN
-    </main>
-    <!-- Footer -->
-    <footer class="bg-success">
-        FOOTER
-    </footer>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-success">
+            FOOTER
+        </footer>
 
 
 
 
 
-    <!-- JAVASCRIPT -->
-    <script src="./assets/js/main.js"></script>
-    <!-- BOOTSTRAP JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
+        <!-- JAVASCRIPT -->
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="./assets/js/main.js"></script>
+        <!-- BOOTSTRAP JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+    </body>
+</div>
+
 </html>
