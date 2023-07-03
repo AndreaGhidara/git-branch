@@ -1,60 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeepStoreGame</title>
-    <!-- BOOSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!-- FONTAWESOME -->
-    <script src='https://kit.fontawesome.com/904cc76917.js' crossorigin= 'anonymous'></script>
-    <!-- VUE -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <!-- STYLE -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DeepStoreGame</title>
+        <!-- BOOSTRAP -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+        <!-- FONTAWESOME -->
+        <script
+            src="https://kit.fontawesome.com/904cc76917.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- VUE -->
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <!-- STYLE -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
 
-<body>
-    <!-- HEADER -->
-    <header>
-        <nav class="bg-primary">
-            <div class="container bg-warning">
-                <div class="row">
-                    <div class="col">
-                        logo
+    <body>
+        <!-- HEADER -->
+        <header>
+            <nav class="bg-primary">
+                <div class="container bg-warning">
+                    <div class="row">
+                        <div class="col">logo</div>
+                        <div class="col">link</div>
+                        <div class="col">menu</div>
                     </div>
-                    <div class="col">
-                        link
-                    </div>
-                    <div class="col">
-                        menu
+                </div>
+            </nav>
+            <!-- JUMBOTRON -->
+            <div class="jumbotron">
+                <div class="container-fluid">
+                    <div
+                        id="jumboCarousel"
+                        class="carousel slide"
+                        data-bs-ride="carousel"
+                    >
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img
+                                    src="assets/img/jumbo-img/jumbo-callofduty.jpeg"
+                                    class="d-block w-100"
+                                    alt="Call of Duty"
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="assets/img/jumbo-img/jumbo-lastofus.jpeg"
+                                    class="d-block w-100"
+                                    alt="The Last of Us"
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="assets/img/jumbo-img/jumbo-darksouls.jpeg"
+                                    class="d-block w-100"
+                                    alt="Dark Souls"
+                                />
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#jumboCarousel"
+                            data-bs-slide="prev"
+                        >
+                            <span
+                                class="carousel-control-prev-icon"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden text-danger"
+                                >Previous</span
+                            >
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#jumboCarousel"
+                            data-bs-slide="next"
+                        >
+                            <span
+                                class="carousel-control-next-icon"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
-        </nav>
-        <!-- JUMBOTRON -->
-        <div class="jumbotron">
-            <div class="container-fluid bg-success">
-                Jumbotron
-            </div>
-        </div>
-    </header>
-    <!-- MAIN -->
-    <main class="bg-black text-white">
-        MAIN
-    </main>
-    <!-- Footer -->
-    <footer class="bg-success">
-        FOOTER
-    </footer>
+        </header>
+        <!-- MAIN -->
+        <main class="bg-black text-white">MAIN</main>
+        <!-- Footer -->
+        <footer class="bg-success">FOOTER</footer>
 
-
-
-
-
-    <!-- JAVASCRIPT -->
-    <script src="./assets/js/main.js"></script>
-    <!-- BOOTSTRAP JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
+        <!-- JAVASCRIPT -->
+        <script src="./assets/js/main.js"></script>
+        <!-- BOOTSTRAP JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
