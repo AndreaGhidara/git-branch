@@ -96,7 +96,17 @@
             </div>
         </header>
         <!-- MAIN -->
-        <main class="bg-black text-white">MAIN</main>
+        <main class="text-white">
+            <div class="container w-100 cardContainer d-flex flex-wrap">
+                <template v-for="card in main_card_img" :key="card.title">
+                    <div class="gameCard mb-3 p-2">
+                        <img class="mb-2" :src="card.url" :alt="card.title" width="200" height="200" />
+                        <h4>{{ card.title }}</h4>
+                        <p>{{ card.price }}</p>
+                    </div>
+                </template>
+            </div>
+        </main>
         <!-- Footer -->
         <footer class="bg-success">FOOTER</footer>
 
